@@ -2,14 +2,14 @@
 
 import type React from "react"
 
-import { Handle, Position, NodeToolbar, NodeResizer, useReactFlow, type NodeProps } from "@xyflow/react"
+import { Handle, Position, NodeToolbar, NodeResizer, useReactFlow, type NodeProps, type Node } from "@xyflow/react"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils" // optional helper if you have one
 
 type ServiceStatus = "idle" | "running" | "ok" | "error"
 type Port = { id: string; side: "left" | "right" | "top" | "bottom"; label?: string }
 
-export type ServiceNodeData = {
+export interface ServiceNodeData extends Record<string, unknown> {
   title: string
   role: string
   func: string
@@ -34,7 +34,7 @@ function Pill({ children, className }: { children: React.ReactNode; className?: 
   )
 }
 
-export function ServiceNode({ id, data, selected }: NodeProps<ServiceNodeData>) {
+export function ServiceNode({ id, data, selected }: NodeProps<Node<ServiceNodeData>>) {
   const rf = useReactFlow()
   const status = data.status ?? "idle"
 

@@ -36,7 +36,7 @@ type Stage =
 
 type NodeStatus = "idle" | "running" | "ok" | "error"
 
-interface ServiceCardData {
+interface ServiceCardData extends Record<string, unknown> {
   title: string
   role: string
   description: string
@@ -60,7 +60,7 @@ const stageToNodeId: Record<Stage, string> = {
   "order.completed": "floorManager",
 }
 
-function ServiceCardNode({ data, selected }: NodeProps<ServiceCardData>) {
+function ServiceCardNode({ data, selected }: NodeProps<Node<ServiceCardData>>) {
   const inputs = data.Input ?? []
   const outputs = data.Output ?? []
   const borderColor = data.isInput
@@ -433,7 +433,7 @@ const baseEdges: Edge[] = [
 const StatusEdge: React.FC<EdgeProps> = (props) => {
   const { sourceX, sourceY, targetX, targetY, markerEnd, data, label } = props
   const [path, labelX, labelY] = getBezierPath({ sourceX, sourceY, targetX, targetY })
-  const status: NodeStatus = data?.status || "idle"
+  const status: NodeStatus = (data?.status as NodeStatus) || "idle"
   const color =
     status === "ok" ? "#10b981" : status === "error" ? "#f43f5e" : status === "running" ? "#f59e0b" : "#71717a"
   return (
@@ -1681,11 +1681,11 @@ function WorkflowCanvas({ eventId }: { eventId?: string }) {
             <ReactFlow
               nodes={nodes}
               edges={edges}
-              nodeTypes={nodeTypes}
+              nodeTypes={nodeTypes as any}
               edgeTypes={edgeTypes}
               onNodesChange={onNodesChange}
               onEdgesChange={onEdgesChange}
-              onNodeClick={onNodeClick}
+              onNodeClick={onNodeClick as any}
               fitView
               fitViewOptions={{
                 padding: 0.1,
@@ -1751,7 +1751,15 @@ function WorkflowCanvas({ eventId }: { eventId?: string }) {
                       <div className="text-[11px] uppercase tracking-wide opacity-70 mb-2">Headers</div>
                       <div className="p-3 bg-zinc-900 rounded-lg border border-zinc-800 font-mono text-[10px] space-y-2 max-h-[180px] overflow-y-auto">
                         {typeof nodeInspectorContent[selectedNode.id].headers === "string" ? (
-                          <div className="text-zinc-400">{nodeInspectorContent[selectedNode.id].headers}</div>
+                          <div className="text-zinc-400">
+                            {Array.isArray(nodeInspectorContent[selectedNode.id].headers)
+                              ? (nodeInspectorContent[selectedNode.id].headers as Array<any>).map((h, i) => (
+                                  <div key={i}>
+                                    {h.key}: {h.value}
+                                  </div>
+                                ))
+                              : (nodeInspectorContent[selectedNode.id].headers as string)}
+                          </div>
                         ) : (
                           (
                             nodeInspectorContent[selectedNode.id].headers as Array<{
