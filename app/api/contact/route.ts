@@ -1,11 +1,10 @@
 import { NextResponse } from "next/server"
 import { Resend } from "resend"
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 const RECIPIENT_EMAIL = "onlisyn2025@gmail.com"
 
 export async function POST(request: Request) {
+  const resend = new Resend(process.env.RESEND_API_KEY)
   console.log("[v0] Contact API route hit")
 
   try {
@@ -17,7 +16,7 @@ export async function POST(request: Request) {
       const { name, email, subject, message } = data
 
       const { data: emailData, error } = await resend.emails.send({
-        from: "Species Market <onboarding@resend.dev>",
+        from: "Neich Market <onboarding@resend.dev>",
         to: RECIPIENT_EMAIL,
         replyTo: email,
         subject: `Contact Form: ${subject}`,
@@ -63,10 +62,10 @@ export async function POST(request: Request) {
     console.log("[v0] Sending earlybird email via Resend...")
 
     const { data: emailData, error } = await resend.emails.send({
-      from: "Species Market <onboarding@resend.dev>",
+      from: "Neich Market <onboarding@resend.dev>",
       to: RECIPIENT_EMAIL,
       replyTo: email,
-      subject: `Forward Contract Request - ${fullName} - ${quantity.toLocaleString()} Specie`,
+      subject: `Forward Contract Request - ${fullName} - ${quantity.toLocaleString()} Neich`,
       html: `
         <h1>Forward Contract Request</h1>
         
@@ -81,7 +80,7 @@ export async function POST(request: Request) {
         
         <h2>Order Details</h2>
         <ul>
-          <li><strong>Quantity:</strong> ${quantity.toLocaleString()} Specie units</li>
+          <li><strong>Quantity:</strong> ${quantity.toLocaleString()} Neich units</li>
           <li><strong>Contract Price:</strong> $${contractPrice.toFixed(2)}</li>
           <li><strong>Admin Fee:</strong> $${adminFee.toFixed(2)}</li>
           <li><strong>Total Price:</strong> $${totalPrice.toFixed(2)}</li>
