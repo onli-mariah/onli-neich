@@ -289,8 +289,8 @@ export default function NeichLandingPage() {
             backgroundRepeat: "no-repeat",
           }}
         >
-          {/* Dark frosted overlay for text readability */}
-          <div className="absolute inset-0 bg-black/60 backdrop-blur-md" />
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-black/30" />
 
           <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-16 w-full">
             <div className="flex flex-col lg:flex-row justify-between items-end gap-8 mb-16">
