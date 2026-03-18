@@ -6,7 +6,6 @@ import { Navigation } from "@/components/navigation"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
-import SpeciesCarousel from "@/components/species-carousel"
 
 export default function NeichLandingPage() {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -504,44 +503,6 @@ export default function NeichLandingPage() {
             </div>
           </div>
         </section>
-
-        {/* Product Shots Section */}
-        <section className="relative min-h-screen w-full flex items-center justify-center bg-black border-t border-white/5 py-24">
-          {/* Brand Image Background */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-30">
-            <img
-              src="/images/design-mode/BrandImage.png.jpeg"
-              alt="Neich Brand"
-              className="w-full h-full object-contain"
-            />
-          </div>
-
-          {/* Time Slider Content */}
-          <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-16 w-full">
-            <div className="mb-16 text-center">
-              <h5 className="text-white/50 text-xs tracking-[0.3em] uppercase mb-6 font-light">Experience</h5>
-              <h2 className="font-light text-white tracking-tight text-3xl">neich.market</h2>
-              <p className="text-white/60 text-lg mt-6 max-w-2xl mx-auto">
-                A seamless trading experience designed for simplicity and transparency
-              </p>
-            </div>
-
-            <div className="h-[1px] bg-white/10 mb-16" />
-
-            <SpeciesCarousel />
-
-            <div className="mt-16 text-center">
-              <button
-                disabled
-                className="px-8 py-3 bg-white/20 text-white/40 text-sm tracking-wider uppercase font-light cursor-not-allowed inline-block"
-              >
-                Coming Soon
-              </button>
-            </div>
-          </div>
-        </section>
-
-
 
         {/* Contact Section */}
         <section
