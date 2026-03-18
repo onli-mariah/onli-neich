@@ -128,7 +128,7 @@ export default function NeichLandingPage() {
           <div className="relative z-10 flex flex-col items-center justify-center gap-8">
             <div className="h-12 flex items-center">
               <h3 className="text-white/70 text-lg md:text-xl tracking-[0.3em] uppercase font-light text-center">
-                Your first intelligent asset
+                THE NATIVE CURRENCY OF THE ONLI ECOSYSTEM
               </h3>
             </div>
 
@@ -205,7 +205,7 @@ export default function NeichLandingPage() {
               Join the Waitlist
             </h2>
             <p className="text-lg text-white/60 leading-relaxed font-light mb-12 max-w-xl mx-auto">
-              Be among the first to experience Neich. Request early access and we'll notify you when we launch.
+              Neich is invite-only. Be among the first to access the native currency of the Onli ecosystem. Submit your email and we'll reach out when your spot is ready.
             </p>
 
             <form onSubmit={handleWaitlistSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -247,7 +247,7 @@ export default function NeichLandingPage() {
               </motion.p>
             )}
 
-            <p className="mt-8 text-white/30 text-xs tracking-wider">No spam, ever. We respect your privacy.</p>
+            <p className="mt-8 text-white/30 text-xs tracking-wider">Your data stays private. Always.</p>
           </div>
         </section>
 
@@ -258,27 +258,21 @@ export default function NeichLandingPage() {
               <div>
                 <h5 className="text-white/50 text-xs tracking-[0.3em] uppercase mb-6 font-light">WHAT IS NEICH</h5>
                 <h2 className="text-5xl md:text-6xl font-light text-white tracking-tight leading-tight">
-                  A New Neich of
+                  The world's first
                   <br />
-                  Digital Assets
+                  intelligent stablecoin.
                 </h2>
               </div>
               <div className="space-y-6">
                 <div className="h-[1px] bg-white/10 mb-8" />
                 <p className="text-lg text-white/60 leading-relaxed font-light">
-                  Neich is a micro-commodity created on the Onli protocol — a sovereign digital asset whose ownership
-                  is verified through authenticated state transitions rather than blockchain ledgers or consensus
-                  networks. This is different from the ground up.
+                  Neich is a dollar-for-dollar stablecoin built on Onli — a new class of digital asset technology that makes digital things behave like objects in the real world. Not a token. Not a coin on a chain. An intelligent asset you actually own.
                 </p>
                 <p className="text-lg text-white/60 leading-relaxed font-light">
-                  A new Neich in the evolution of digital assets. Neich is not a token, not a key, and not an entry
-                  in a public ledger. It is a singular, self-contained asset you own directly — alive in structure,
-                  secure by design, and free from the constraints of chains, miners, or confirmations.
+                  Onli creates true digital property through actual possession — no blockchain, no miners, no ledgers. Every Neich unit is singular, self-contained, and sovereign the moment it's in your vault. This is what money looks like when it finally works.
                 </p>
                 <p className="text-lg text-white/60 leading-relaxed font-light">
-                  Neich introduces the world's first intelligent digital asset — the first of many to come. Assets
-                  that are truly sovereign the moment you hold them. Introducing the first publicly available Neich of
-                  a digital, possession-based economy.
+                  Neich is the currency that powers everything in the Onli ecosystem — from developer subscriptions on Onli.cloud to asset minting fees. One currency. Zero friction. No gas fees. Ever.
                 </p>
               </div>
             </div>
@@ -303,7 +297,7 @@ export default function NeichLandingPage() {
             <div className="flex flex-col lg:flex-row justify-between items-end gap-8 mb-16">
               <div>
                 <h5 className="text-white/50 text-xs tracking-[0.3em] uppercase mb-6 font-light">
-                  What we can offer you
+                  WHAT WE CAN OFFER YOU
                 </h5>
                 <h2 className="text-5xl md:text-6xl font-light text-white tracking-tight">How to Get It</h2>
               </div>
@@ -321,12 +315,10 @@ export default function NeichLandingPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
               <div className="p-8 md:p-12 border-b border-white/10 md:border-r bg-black/40 backdrop-blur-sm">
                 <h6 className="text-white text-lg tracking-wide mb-4">
-                  <span className="text-white/50">Step 1:</span> Request an Invitation
+                  <span className="text-white/50">Step 1:</span> Get Your Onli.ID
                 </h6>
                 <p className="text-white/60 leading-relaxed font-light">
-                  Neich.Market is an invitation-only marketplace. To participate, you'll complete standard KYC/AML
-                  verification, granting access to the entire Onli ecosystem. Request an invitation at Neich.Market,
-                  or if you're a developer from inside your Onli.Cloud app. Begin your evolution. Join Neich.
+                  Before you can join Neich, you need an Onli.ID — your single identity across the entire Onli ecosystem. Download the Onli.You app, submit your email and the Neich appliance symbol, and your request will be reviewed by a Neich admin. Once approved, you'll receive an invite code to create your Onli.ID. One profile. Every appliance. For life.
                 </p>
               </div>
 
@@ -335,9 +327,7 @@ export default function NeichLandingPage() {
                   <span className="text-white/50">Step 2:</span> Get Onli.You
                 </h6>
                 <p className="text-white/60 leading-relaxed font-light">
-                  Download Onli.You, your vault for true digital possession. Not a wallet — a possession system with no
-                  blockchain, no ledger, and no miners. Once registered, your sovereign Onli identity works across every
-                  appliance. One profile to rule them all.
+                  Onli.You is your personal vault for Neich and every intelligent asset on the Onli network. It's not a wallet — it's a possession system. No blockchain, no ledger, no miners. Every action you take — buy, sell, transfer, approve — is authorized here. Once your Onli.ID is active, Onli.You is your home base for everything.
                 </p>
               </div>
 
@@ -346,22 +336,16 @@ export default function NeichLandingPage() {
                   <span className="text-white/50">Step 3:</span> Join Neich.Market
                 </h6>
                 <p className="text-white/60 leading-relaxed font-light">
-                  Acquire Neich, your first micro-commodity, directly through Neich.Market. No complex interface —
-                  simply speak or type your intent: "Buy Neich," "Send Neich to Paul," "Sell Neich," "Use Neich
-                  to pay." English is your trading language. Finance without friction. Neich is an intelligent asset,
-                  accessible through any AI agent connected via the SPEC MCP. Trade in a new Neich of economy.
+                  With your Onli.ID in hand, open the catalogue inside Onli.You, find Neich, and request to join. Once approved, you'll receive an invite code to your connected email. Activate it in the app and you're in. From there, visit the Neich marketplace to buy Neich with USD — dollar for dollar — and use it to pay for any Onli product or service.
                 </p>
               </div>
 
               <div className="p-8 md:p-12 bg-black/40 backdrop-blur-sm">
                 <h6 className="text-white text-lg tracking-wide mb-4">
-                  <span className="text-white/50">Step 4:</span> Safe and Secure
+                  <span className="text-white/50">Step 4:</span> Hold, Spend, or Sell
                 </h6>
                 <p className="text-white/60 leading-relaxed font-light">
-                  Neich is always priced at a fixed $1. The proceeds from the first issuance of any Neich flow into
-                  the transparent Assurance Account — an automated reserve that guarantees liquidity for all. Beyond
-                  issuance, Neich trades freely in a peer-to-peer market, with value moving directly between owners.
-                  Liquidity at any scale, whenever you need it. Meet the new Neich of stable coins.
+                  Neich is always priced at exactly $1. Use it to pay developer subscription fees, asset treasury deposits, or one-time minting fees ($0.05 per asset). Sell whatever you don't need back to the marketplace at any time. Or hold it in your Onli.You vault — secure, private, and always yours. No transaction fees. No gas. No surprises.
                 </p>
               </div>
             </div>
@@ -387,10 +371,10 @@ export default function NeichLandingPage() {
               <div className="space-y-8">
                 <div>
                   <h5 className="text-white/50 text-xs tracking-[0.3em] uppercase mb-6 font-light">
-                    Request an Invite
+                    THE POSSESSION ECONOMY
                   </h5>
                   <h2 className="text-5xl md:text-6xl font-light text-white tracking-tight mb-8">
-                    Finance Without Friction
+                    Currency Without Compromise.
                   </h2>
                 </div>
 
@@ -398,17 +382,15 @@ export default function NeichLandingPage() {
 
                 <div className="space-y-6">
                   <p className="text-lg text-white/60 leading-relaxed font-light">
-                    Managing your intelligent assets should be as simple as having a conversation. With Onli.AI, finance
-                    becomes intuitive — just chat naturally to buy, sell, or transfer your digital possessions.
+                    Every digital currency before Neich asked you to trust a system. A ledger. A network. A consensus. Onli asks you to trust only yourself — because with Neich, you actually hold what you own.
                   </p>
                   <p className="text-lg text-white/60 leading-relaxed font-light">
-                    No complex interfaces. No hidden fees. No transaction costs. Just pure, frictionless value exchange
-                    powered by conversation. Your words become actions, instantly.
+                    No complex interfaces. No hidden fees. No transaction costs. No gas. Neich moves the way value should — directly, privately, and completely under your control.
                   </p>
                 </div>
 
                 <div className="space-y-4 pt-4">
-                  <h4 className="text-white/50 text-xs tracking-wider uppercase mb-2">Key Benefits</h4>
+                  <h4 className="text-white/50 text-xs tracking-wider uppercase mb-2">KEY BENEFITS</h4>
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
                       <div className="w-1 h-1 bg-white/40 rounded-full mt-2.5" />
@@ -416,25 +398,29 @@ export default function NeichLandingPage() {
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-1 h-1 bg-white/40 rounded-full mt-2.5" />
-                      <p className="text-white/60 text-sm">Natural language commands in any chat</p>
+                      <p className="text-white/60 text-sm">Dollar-for-dollar stability, always</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-1 h-1 bg-white/40 rounded-full mt-2.5" />
-                      <p className="text-white/60 text-sm">Instant settlement with no intermediaries</p>
+                      <p className="text-white/60 text-sm">Held in your device-tied Onli.You vault</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-1 h-1 bg-white/40 rounded-full mt-2.5" />
-                      <p className="text-white/60 text-sm">AI-powered intelligent asset management</p>
+                      <p className="text-white/60 text-sm">Authorized by you, every single time</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-1 h-1 bg-white/40 rounded-full mt-2.5" />
+                      <p className="text-white/60 text-sm">No blockchain, no intermediaries, no compromise</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="pt-6">
                   <Link
-                    href="/contact"
+                    href="#join"
                     className="px-8 py-3 bg-white text-black text-sm tracking-wider uppercase font-light hover:bg-white/90 transition-colors inline-block"
                   >
-                    Experience It Now
+                    REQUEST ACCESS
                   </Link>
                 </div>
               </div>
@@ -456,11 +442,11 @@ export default function NeichLandingPage() {
           <div className="max-w-7xl mx-auto px-8 lg:px-16 w-full flex justify-end">
             <div className="w-full lg:w-1/2 space-y-8">
               <div>
-                <h5 className="text-white/50 text-xs tracking-[0.3em] uppercase mb-6 font-light">Get Started Today</h5>
+                <h5 className="text-white/50 text-xs tracking-[0.3em] uppercase mb-6 font-light">GET STARTED TODAY</h5>
                 <h2 className="text-5xl md:text-6xl font-light text-white tracking-tight leading-tight">
                   Download
                   <br />
-                  OnliYou
+                  Onli.You
                 </h2>
               </div>
 
@@ -468,17 +454,15 @@ export default function NeichLandingPage() {
 
               <div className="space-y-6">
                 <p className="text-lg text-white/60 leading-relaxed font-light">
-                  Your personal vault for Neich and all intelligent assets on the Onli network. Experience true
-                  digital possession with the only app designed for actual ownership.
+                  Your personal vault for Neich and all intelligent assets on the Onli network. The only app built for actual digital possession — not just storage, but true ownership tied to you and your device.
                 </p>
                 <p className="text-lg text-white/60 leading-relaxed font-light">
-                  Download OnliYou today and join the revolution in digital value. No blockchain. No complexity. Just
-                  pure possession.
+                  Download Onli.You, create your Onli.ID, and take your first step into the possession economy. Then come back to Neich.market and request your access.
                 </p>
               </div>
 
               <div className="space-y-4 pt-4">
-                <h4 className="text-white/50 text-xs tracking-wider uppercase mb-2">Available On</h4>
+                <h4 className="text-white/50 text-xs tracking-wider uppercase mb-2">AVAILABLE ON</h4>
                 <div className="flex gap-4">
                   <a
                     href="https://www.onli.you"
@@ -486,13 +470,13 @@ export default function NeichLandingPage() {
                     rel="noopener noreferrer"
                     className="px-6 py-3 bg-transparent text-white text-sm tracking-wider uppercase font-light border border-white hover:bg-white hover:text-black transition-colors"
                   >
-                    iOS - Available Now
+                    iOS — Available Now
                   </a>
                   <button
                     disabled
                     className="px-6 py-3 bg-white/10 text-white/40 text-sm tracking-wider uppercase font-light cursor-not-allowed border border-white/20"
                   >
-                    Android - Coming Soon
+                    Android — Coming Soon
                   </button>
                 </div>
               </div>
@@ -501,19 +485,19 @@ export default function NeichLandingPage() {
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
                     <div className="w-1 h-1 bg-white/40 rounded-full mt-2.5" />
-                    <p className="text-white/60 text-sm">Secure possession vault</p>
+                    <p className="text-white/60 text-sm">Secure possession vault — device-tied, not cloud-dependent</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-1 h-1 bg-white/40 rounded-full mt-2.5" />
-                    <p className="text-white/60 text-sm">Real-time asset verification</p>
+                    <p className="text-white/60 text-sm">Authorize every action: buy, sell, transfer, approve</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-1 h-1 bg-white/40 rounded-full mt-2.5" />
-                    <p className="text-white/60 text-sm">AI-powered conversational management</p>
+                    <p className="text-white/60 text-sm">Browse the appliance catalogue and request access to Neich</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-1 h-1 bg-white/40 rounded-full mt-2.5" />
-                    <p className="text-white/60 text-sm">Zero fees, complete privacy</p>
+                    <p className="text-white/60 text-sm">Zero fees. Complete privacy. Total control.</p>
                   </div>
                 </div>
               </div>
