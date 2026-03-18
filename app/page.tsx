@@ -283,14 +283,14 @@ export default function NeichLandingPage() {
           id="how-it-works"
           className="relative min-h-screen w-full flex items-center justify-center bg-black border-t border-white/5 py-24"
           style={{
-            backgroundImage: "url(/images/a-trading-interface-screen-with-the-header-text-s-1762472285021.png)",
+            backgroundImage: "url(/images/mountaintop.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
         >
-          {/* Dark overlay for text readability */}
-          <div className="absolute inset-0 bg-black/85" />
+          {/* Dark frosted overlay for text readability */}
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-md" />
 
           <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-16 w-full">
             <div className="flex flex-col lg:flex-row justify-between items-end gap-8 mb-16">
