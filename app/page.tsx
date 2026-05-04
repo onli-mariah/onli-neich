@@ -10,7 +10,7 @@ import { useState, useEffect } from "react"
 export default function NeichLandingPage() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [timeLeft, setTimeLeft] = useState(() => {
-    const targetDate = new Date("2026-05-16T00:00:00").getTime()
+    const targetDate = new Date("2026-05-20T00:00:00").getTime()
     const now = new Date().getTime()
     const difference = targetDate - now
     if (difference > 0) {
@@ -30,7 +30,7 @@ export default function NeichLandingPage() {
   const phrases = ["intelligent assets", "secure by design", "possession not permission", "a new neich of value"]
 
   useEffect(() => {
-    const targetDate = new Date("2026-05-16T00:00:00").getTime()
+    const targetDate = new Date("2026-05-20T00:00:00").getTime()
 
     const calculateTimeLeft = () => {
       const now = new Date().getTime()
@@ -157,7 +157,7 @@ export default function NeichLandingPage() {
             </div>
 
             <div className="mt-8 flex flex-col items-center gap-4">
-              <p className="text-white/40 text-xs tracking-[0.3em] uppercase font-light">Launch May 16th, 2026</p>
+              <p className="text-white/40 text-xs tracking-[0.3em] uppercase font-light">Launch May 20th, 2026</p>
               <div className="flex gap-6 md:gap-10">
                 <div className="flex flex-col items-center">
                   <span className="text-white text-3xl md:text-5xl font-light tracking-wider">
